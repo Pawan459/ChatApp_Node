@@ -14,10 +14,29 @@
             display: flex;
             justify-content: center;
         }
+        
+        div{
+            margin: 2px;
+        }
+
+        #typing{
+            position: absolute;
+            left: 30%;
+            width: 300px;
+            height: 50px;
+            font-size: large;
+            margin-top: 5px;
+            box-shadow: 1px 1px grey, 2px 3px lightgrey;
+            border-radius: 15px;
+            background-color: lightcoral;
+        }
 
         #message-container{
             width: 80%;
             max-width: 1200px;
+            box-shadow: 1px 1px grey, 2px 3px lightgrey;
+            overflow-y: scroll;
+            max-height: 500px;
         }
 
         #message-container div{
@@ -30,8 +49,17 @@
         }
 
         #send-container{
-            margin-top: 100%;
             justify-content: center;
+            height: 200px;
+            background-color: burlywood;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #send-container > button{
+            width: 200px;
+            height: 50px;
+            border-radius: 15px;
         }
 
         #send-container #text{
